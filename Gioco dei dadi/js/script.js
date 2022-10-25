@@ -49,15 +49,18 @@ function rollDice() {
       if (diceNum[0] == diceNum[1]){
           diceResult.innerHTML = "Pareggio!";
           console.log("Pareggio!")
-          diceResult.style.color = "red";
+          diceResult.style.color = "yellow";
+          diceResult.style.textDecoration = "underline";
       } else if (diceNum[0] > diceNum[1]){
           diceResult.innerHTML = "Hai vinto!";
           console.log("Hai vinto!")
           diceResult.style.color = "green";
+          diceResult.style.textDecoration = "underline";
       } else {
           diceResult.innerHTML = "Hai perso!";
           console.log("Hai perso!")
           diceResult.style.color = "red";
+          diceResult.style.textDecoration = "underline";
       }
   }
 
